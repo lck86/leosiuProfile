@@ -1,0 +1,157 @@
+.fullHeight{
+    min-height: 100vh;
+}
+
+a{
+  color:rgb(148, 229, 250);
+  text-shadow: 0px 0px 1px rgb(253, 249, 249)
+}
+.customText-color{
+  color:rgb(247, 242, 242) !important;
+}
+.bg-header{
+  opacity: 1;
+  transition: 1.2s;
+  background: #222424 !important;
+}
+
+.bg-headerTransparent{
+  transition: 1.2s;
+  background: transparent;
+}
+
+.bg-customLight{
+  background: #131316;
+}
+
+.bg-customDark{
+  background: rgb(3, 0, 1);
+}
+
+.cursorP{
+    cursor: pointer ;
+}
+
+.active{
+  text-shadow: 1px 0px  7px rgb(243, 238, 238);
+}
+
+.dropdown-item:hover{
+  background-color: grey;
+}
+
+@media (min-width:992px){
+  #dropdown-menu{
+    width:200px; left:50%; margin-left:-100px;
+  }
+}
+
+
+html {
+    scroll-behavior: smooth;
+  }
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+body{
+    position: relative;
+    font-family: Raleway, sans-serif;
+}
+
+@media screen and (max-width:210px){
+  body,.Header{
+    width: 210px;
+  }
+ 
+}
+
+.opcFalse{
+  opacity: 0;
+  transform: translateY(50%);
+  transition: 1.8s;
+}
+.opcTrue{
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1.8s;
+}
+
+
+.revealHeader{
+  padding-top: 70px;
+  position: relative;
+  opacity: 0;
+  .fadeTitle{
+    text-shadow: 1px 1px 1px 1px grey;
+    position: relative;
+    opacity: 0;
+    transform: scale(0);
+    animation: fadeIn 1.5s forwards;
+    
+  }
+
+}
+
+.revealHeader.revealed{
+  opacity: 1;
+}
+
+.toast{
+  position:fixed;
+  top:150px;
+  left:50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 2px 2px grey;
+
+}
+
+
+/*fading title*/
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+
+  @media (prefers-reduced-motion: reduce){
+    .carousel-item {
+      transition:-webkit-transform .6s ease-in-out;
+      transition: transform .6s ease-in-out,-webkit-transform .6s ease-in-out;
+    }
+    .fade {
+      transition: opacity .15s linear;
+    }
+  }
+
+  #myWorks .col-md-6:hover{
+    
+    img{
+      background-color: grey;
+      opacity: 0.2;
+    }
+    
+    img+a{
+      color: white;
+      visibility: unset;
+      
+    }
+  }
+  #myWorks img+a{
+    visibility: hidden;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    background-color: rgb(83, 45, 45);
+    padding: 5px 10px;
+    text-align: center;
+    width:150px;
+    box-shadow: 0 0 1px 1px  grey;
+    top: 45%;
+    left:50%;
+    transform: translateX(-50%);
+  }
+ 
+  
+  
+

@@ -1,0 +1,25 @@
+.HomePage{
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+
+}
+
+.landIn{
+  animation: landIn 0.8s ease-out both;
+}
+.landIn span{
+  animation: landIn 0.8s ease-out both;
+} 
+@keyframes landIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
